@@ -17,7 +17,6 @@ import 'react-dates/lib/css/_datepicker.css';
 // redux store - give access to dispatch, getState, subscribe
 const store = configureStore();
 
-
 // .2
 const jsx = (
     <Provider store={store}>
