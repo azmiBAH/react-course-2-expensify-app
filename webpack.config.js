@@ -43,7 +43,6 @@ module.exports = (env) => {
         devServer: {
             contentBase: path.join(__dirname, 'public'),
             historyApiFallback: true
-        },
-        NPM_CONFIG_PRODUCTION: false
+        }
     };
 }
