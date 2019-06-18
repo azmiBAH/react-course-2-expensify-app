@@ -13,26 +13,26 @@ module.exports = (env) => {
         },
         module: {
             rules: [{
-              loader: 'babel-loader',
-              test: /\.js$/,
-              exclude: /node_modules/
+                loader: 'babel-loader',
+                test: /\.js$/,
+                exclude: /node_modules/
             }, {
-            test: /\.s?css$/,
-            use: CSSExtract.extract({
-                use: [
-                    {
-                        loader: 'css-loader',
-                        options: {
-                            sourceMap: true
+                test: /\.s?css$/,
+                use: CSSExtract.extract({
+                    use: [
+                        {
+                            loader: 'css-loader',
+                            options: {
+                                sourceMap: true
+                            }
+                        },
+                        {
+                            loader: 'sass-loader',
+                            options: {
+                                sourceMap: true
+                            }
                         }
-                    },
-                    {
-                        loader: 'sass-loader',
-                        options: {
-                            sourceMap: true
-                        }
-                    } 
-                ]
+                    ]
                 })
             }]
         },

@@ -13,7 +13,7 @@
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
     "start": "node server/server.js",
-    "heroku-prebuild": "npm run build:prod"
+    "heroku-postbuild": "npm run build:prod"
   },
   "author": "",
   "license": "ISC",
